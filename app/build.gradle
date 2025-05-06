@@ -14,7 +14,7 @@ android {
         versionName "1.0"
 
         // Adding API key for Gemini as a BuildConfig field
-        buildConfigField "String", "GEMINI_API_KEY", "\"AIzaSyCtnteDCLH3Lx4n58WB5bGqZl2fvBVj5_U\""
+        buildConfigField "String", "GEMINI_API_KEY", "\"API KEY""
 
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
     }
