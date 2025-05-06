@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_BACKGROUND_LOCATION" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Purple">
+        <activity
+            android:name=".MapActivity"
+            android:exported="false" />
+        <!-- LoginActivity is now the launcher activity -->
+        <activity
+            android:name=".LoginActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity> <!-- RegisterActivity must be registered here -->
+        <activity
+            android:name=".RegisterActivity"
+            android:exported="true" /> <!-- MainActivity is still part of the app but no longer the launcher -->
+        <activity
+            android:name=".MainActivity"
+            android:exported="true" /> <!-- DetailsActivity -->
+        <activity
+            android:name=".DetailsActivity"
+            android:exported="true" /> <!-- WeatherActivity for displaying weather information -->
+        <activity
+            android:name=".WeatherActivity"
+            android:exported="true" /> <!-- WeatherInsightsActivity for LLM insights -->
+        <activity
+            android:name=".WeatherInsightsActivity"
+            android:exported="true" />
+    </application>
+
+</manifest>

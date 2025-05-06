@@ -1,0 +1,16 @@
+<resources>
+
+    <string name="app_name">Team 21</string>
+    <string name="welcome_msg">Welcome, %1$s!</string>
+    <string name="login_success">Login Successful!</string>
+    <string name="login_incorrect">Invalid username or password</string>
+    <string name="login_empty">Please input username and password</string>
+    <string name="register_success">Registration Successful!</string>
+    <string name="register_error">Username already exists or invalid input</string>
+    <string name="error_generic">Something went wrong!</string>
+    <string-array name="theme_options">
+        <item>Purple</item>
+        <item>Blue</item>
+        <item>Green</item>
+    </string-array>
+</resources>
